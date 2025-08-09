@@ -1,0 +1,59 @@
+{
+  "intent_candidates": [
+    "code", "creative", "general", "math", "research", "humor", "translation", "finance",
+    "medical", "legal", "education", "science", "history", "sports", "business", "marketing",
+    "healthcare", "music", "news", "tech", "travel", "gaming", "shopping", "interview",
+    "resume", "presentation", "document_summary", "chat", "counseling", "startup", "analytics",
+    "email", "productivity", "story"
+  ],
+  "intent_to_model": {
+    "code": "deepseek-coder",
+    "creative": "glm-4.5",
+    "general": "glm-4.5",
+    "math": "glm-4.5",
+    "research": "glm-4.5",
+    "humor": "grok",
+    "translation": "glm-4.5",
+    "finance": "glm-4.5",
+    "medical": "glm-4.5",
+    "legal": "glm-4.5",
+    "education": "glm-4.5",
+    "science": "glm-4.5",
+    "history": "glm-4.5",
+    "sports": "gpt-3.5-turbo",
+    "business": "glm-4.5",
+    "marketing": "gpt-3.5-turbo",
+    "healthcare": "glm-4.5",
+    "music": "grok",
+    "news": "gpt-3.5-turbo",
+    "tech": "glm-4.5",
+    "travel": "glm-4.5",
+    "gaming": "grok",
+    "shopping": "gpt-3.5-turbo",
+    "interview": "glm-4.5",
+    "resume": "glm-4.5",
+    "presentation": "glm-4.5",
+    "document_summary": "glm-4.5",
+    "chat": "glm-4.5",
+    "counseling": "glm-4.5",
+    "startup": "glm-4.5",
+    "analytics": "glm-4.5",
+    "email": "glm-4.5",
+    "productivity": "glm-4.5",
+    "story": "glm-4.5"
+  },
+  "templates": {
+    "code": "You are a coding expert. Solve the programming task below:\\n\\n{input}",
+    "creative": "You are a creative writer. Create something imaginative based on:\\n\\n{input}",
+    "general": "You are a helpful assistant. Provide a thoughtful response to:\\n\\n{input}",
+    "math": "You are a math expert. Solve and explain:\\n\\n{input}",
+    "research": "You are a research assistant. Provide insights about:\\n\\n{input}",
+    "humor": "Add humor or make this funnier:\\n\\n{input}"
+  },
+  "top_k": 5,
+  "optimizer": {
+    "always_optimize": true,
+    "glm_model_name": "glm-4"
+  },
+  "tiebreaker": "highest_single_intent_score"
+}

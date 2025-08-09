@@ -1,0 +1,12 @@
+python-dotenv
+langchain
+langchain-community
+huggingface_hub
+transformers
+torch
+openai
+anthropic
+google-generativeai
+mistralai
+zhipuai
+requests
